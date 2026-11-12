@@ -1,0 +1,25 @@
+{
+  "name": "pi-codex-no-zstd",
+  "version": "1.0.0",
+  "description": "Pi extension: send Codex HTTP/SSE requests as plain JSON to work around compression-dependent HTTP 400 errors.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yegori/pi-codex-no-zstd.git"
+  },
+  "keywords": ["pi-package", "openai", "codex", "zstd", "workaround"],
+  "engines": { "node": ">=24" },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

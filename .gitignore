@@ -1,0 +1,15 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.tgz
+coverage/
+.DS_Store
+Thumbs.db
+# Never commit credentials, captured requests, or local diagnostic sessions.
+auth.json
+mcp-auth.json
+settings.json
+sessions/
+local-diagnostics/
